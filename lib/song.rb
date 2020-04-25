@@ -26,8 +26,11 @@ class Song
   
   def self.find_by_name(name)
     @@all.each do |ele| 
-      return ele if ele.name = name }
-    false
+    if ele.name = name
+       return ele 
+    else
+      return false
+    end
   end
   
   def save
