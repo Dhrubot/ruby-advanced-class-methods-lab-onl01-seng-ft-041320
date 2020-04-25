@@ -28,6 +28,10 @@ class Song
     @@all.find {|ele| ele.name == name}
   end
   
+  def self.find_or_create_by_name(name)
+    
+  end
+  
   def save
     self.class.all << self
   end
