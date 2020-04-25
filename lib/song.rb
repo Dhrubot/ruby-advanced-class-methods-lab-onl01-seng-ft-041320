@@ -36,6 +36,10 @@ class Song
     @@all.sort_by {|ele| ele.name}
   end
   
+  def self.new_from_filename
+    
+  end
+  
   def save
     self.class.all << self
   end
