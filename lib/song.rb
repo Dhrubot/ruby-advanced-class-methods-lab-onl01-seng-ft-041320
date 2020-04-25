@@ -38,7 +38,7 @@ class Song
   
   def self.new_from_filename(name)
     song = self.new
-    name_array = name.split("-").chomp(".mp3")
+    name_array = name.split(" - ").chomp(".mp3")
     song.artist_name = name_array[0]
     song.name = name_array[1]
     @all << song
