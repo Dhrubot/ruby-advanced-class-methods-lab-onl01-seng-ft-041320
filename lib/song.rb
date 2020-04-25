@@ -17,7 +17,8 @@ class Song
     song.name = name
     song
   end
-
+  
+  def create_by_name
   def save
     self.class.all << self
   end
