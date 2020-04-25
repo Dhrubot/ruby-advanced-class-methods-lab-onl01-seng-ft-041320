@@ -8,7 +8,7 @@ class Song
   
   def self.create
     self.all.save
-    self
+    self.all.last
   end
 
   def save
